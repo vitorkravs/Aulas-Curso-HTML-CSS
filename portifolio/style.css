@@ -14,6 +14,7 @@
 
 body {
     background-color: var(--cor1);
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,36 +25,50 @@ header {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 100vw;
-    height: 310px;
+    transition-duration: 1s;
+}
+
+header > h1, h2{
+    text-align: center;
     padding: 10px;
 }
 
-header > div{
+header > h2 > a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+header > h2 > a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+/*Sessão main*/
+
+section.conhecimentos{
     text-align: center;
+    padding: 10px;
+}
+
+section.conhecimentos > div{
     display: inline-block;
 }
 
-div.perfil{
-    width: 400px;
-    height: 310px;
+.css-foto{
+    width: 50vw;
 }
 
-div.perfil > img{
-    width: 310px;
-    border-radius: 50%;
+.css-foto > p {
+    padding: 10px;   
 }
 
-div.txtheader{
-    width: 400px;
-    height: 310px;
+.html-foto > p {
+    padding: 10px;
 }
 
-div.foguete {
-    width: 400px;
-    height: 310px;
+.js-foto{
+    padding: 10px;
 }
 
-div.foguete > img {
-    width: 310px;
-}
 
